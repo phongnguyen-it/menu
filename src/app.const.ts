@@ -1,11 +1,9 @@
 export const APP_ROUTE = {
   HOME: "/",
-  MENU: "/menu",
- 
+  MENU: "/menu"
 };
 
 export const INVALID_VALUES = [null, undefined, "null", "undefined", ""];
-
 
 export const EVENTS_TRACKING = {
   APP_CRASHED: "AppCrashed",

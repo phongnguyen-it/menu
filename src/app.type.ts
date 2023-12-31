@@ -2,6 +2,13 @@ import React from "react";
 
 export interface LayoutProps {
   children: React.ReactNode;
-  params?: {
-  };
+  params?: {};
 }
+
+export type Product = {
+  id: string;
+  title: string;
+  price: number;
+  category: string;
+  images: string[];
+};

@@ -1,5 +1,5 @@
-import {MetadataRoute} from "next";
-import {APP_DOMAIN_NAME} from "@/app.conf";
+import { MetadataRoute } from "next";
+import { APP_DOMAIN_NAME } from "@/app.conf";
 
 /**
  * Refs:
@@ -17,8 +17,7 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "*",
         allow: "/"
       }
-    
     ],
-    sitemap: [`${APP_DOMAIN_NAME}/sitemap.xml`,]
+    sitemap: [`${APP_DOMAIN_NAME}/sitemap.xml`]
   };
 }

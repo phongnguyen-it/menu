@@ -3,5 +3,5 @@ export default function Home() {
     <main className={"page-container"}>
       <h1>HƯƠNG XUÂN</h1>
     </main>
-  )
+  );
 }

@@ -2,10 +2,7 @@ import { MetadataRoute } from "next";
 import { APP_ROUTE } from "@/app.const";
 import { APP_DOMAIN_NAME } from "@/app.conf";
 
-const ENDPOINTS = [
-  APP_ROUTE.HOME,
-  APP_ROUTE.MENU,
-];
+const ENDPOINTS = [APP_ROUTE.HOME, APP_ROUTE.MENU];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapRoute: MetadataRoute.Sitemap = [];

@@ -21,13 +21,7 @@ export const SEO = {
   description: "Quán nước nghỉ mát - cà phê sân vườn",
   keyword: "Quán nước nghỉ mát",
   alt_key: "| Hình Ảnh Hương Xuân Quán | Hương Xuân Quán",
-  keywords: [
-    "Hương Xuân",
-    "Quán cà phê",
-    "Cà phê sân vườn",
-    "Quán dừng chân",
-  ],
-  
+  keywords: ["Hương Xuân", "Quán cà phê", "Cà phê sân vườn", "Quán dừng chân"]
 };
 export const MAX_WIDTH_CONTAINER = 1238;
 export const MAX_WIDTH_MODAL = 1000;

@@ -12,6 +12,7 @@
     "info": "next info --verbose"
   },
   "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.0",
     "@next/third-parties": "^14.0.4",
     "antd": "^5.12.6",
     "eslint-config-prettier": "^9.1.0",
