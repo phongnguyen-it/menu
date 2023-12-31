@@ -1,0 +1,50 @@
+@import "@/app/app.scss";
+
+.page-container {
+  width: 100%;
+  max-width: $lg-breakpoint;
+  height: 100%;
+
+  padding: 24px;
+
+
+  .page-title {
+    margin: 12px 24px;
+    text-align: center;
+  }
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 32px 0;
+  }
+}
+
+
+.product-card {
+  width: 100%;
+  max-width: 222px;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+  border: 1px solid $border-color;
+
+  &:hover {
+
+  }
+
+  .product-photo {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+  }
+
+  .p-card-info {
+    border-top: 1px solid $border-color;
+    padding: 12px;
+    background: $bg-white;
+    border-radius: 0 0 8px 8px ;
+  }
+}

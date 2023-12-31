@@ -10,5 +10,6 @@ export type Product = {
   title: string;
   price: number;
   category: string;
+  unit: string;
   images: string[];
 };

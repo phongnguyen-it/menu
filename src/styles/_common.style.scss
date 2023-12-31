@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+$spacing: (
+  4: 4px,
+  6: 6px,
+  8: 8px,
+  12: 12px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  28: 28px,
+  32: 32px,
+  48: 48px,
+);
+
+@each $name, $value in $spacing {
+  .box-r-#{$name} {
+    padding: $value;
+    border-radius: 8px;
+
+    p {
+      font-weight: 500;
+    }
+  }
+
+  .pd-#{$name} {
+    padding: $value;
+  }
+
+  .mg-#{$name} {
+    margin: $value;
+  }
+
+  .pd-left-#{$name} {padding-left: $value;}
+  .pd-right-#{$name} {padding-right: $value;}
+  .pd-top-#{$name} {padding-top: $value;}
+  .pd-bottom-#{$name} {padding-bottom: $value;}
+
+  .mg-bottom-#{$name} {margin-bottom: $value;}
+  .mg-top-#{$name} {margin-top: $value;}
+  .mg-left-#{$name} {margin-left: $value;}
+  .mg-right-#{$name} {margin-right: $value;}
+
+}

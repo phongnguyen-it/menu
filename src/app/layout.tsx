@@ -5,6 +5,7 @@ import { APP_DOMAIN_NAME, GTM_ID, SEO, SOCIAL_LINKS } from "@/app.conf";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Organization, WithContext } from "schema-dts";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,6 +51,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AntdRegistry>{children}</AntdRegistry>
       </body>
       {GTM_ID && <GoogleTagManager gtmId={`${GTM_ID}`} />}
+      <Script
+        id={"firework-script"}
+        strategy={"afterInteractive"}
+        dangerouslySetInnerHTML={{
+          __html: ""
+        }}
+      />
     </html>
   );
 }
