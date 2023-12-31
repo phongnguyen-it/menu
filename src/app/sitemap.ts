@@ -4,6 +4,7 @@ import { APP_DOMAIN_NAME } from "@/app.conf";
 
 const ENDPOINTS = [
   APP_ROUTE.HOME,
+  APP_ROUTE.MENU,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
