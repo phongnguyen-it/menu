@@ -45,9 +45,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <meta name="google-site-verification" content="64pjk_ap59G8eIxiFX0y1TIKRbC00HPHDkKGSIoUIds" />
 
-        <script key="math99th-structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
+        <script
+          key="math99th-structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }}
+        />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <AntdRegistry>{children}</AntdRegistry>
       </body>
       {GTM_ID && <GoogleTagManager gtmId={`${GTM_ID}`} />}

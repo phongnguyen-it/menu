@@ -2,7 +2,7 @@
 
 .page-container {
   width: 100%;
-  max-width: $lg-breakpoint;
+  max-width: $hd-breakpoint;
   height: 100%;
 
   padding: 24px;
@@ -22,37 +22,39 @@
   }
 
   .products-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
     padding: 32px 0;
+    width: 100%;
   }
 }
 
 
 .product-card {
   width: 100%;
-  max-width: 222px;
+  //max-width: 222px;
 
   cursor: pointer;
 
   border-radius: 8px;
-  border: 1px solid $border-color;
+  //border: 1px solid $border-color;
 
   &:hover {
 
   }
 
   .product-photo {
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
+    //border-radius: 8px 8px 0 0;
     object-fit: cover;
   }
 
   .p-card-info {
     //border-top: 1px solid $border-color;
-    padding: 12px;
-    background: $bg-white;
-    border-radius: 0 0 8px 8px ;
+    padding: 12px 0;
+    //background: $bg-white;
+    border-radius: 0 0 8px 8px;
+    //position: absolute;
+    //bottom: 0;
+    width: 100%;
+    //background: linear-gradient(to right, red , yellow);
   }
 }

@@ -1,9 +1,11 @@
 import React from "react";
-import { Button, Result } from "antd";
 import Link from "next/link";
 import { APP_ROUTE } from "@/app.const";
+import Button from "antd/es/button";
+import Result from "antd/es/result";
 
 type IProps = {};
+
 const NotFoundPage = (props: IProps) => {
   return (
     <section className={"section"}>

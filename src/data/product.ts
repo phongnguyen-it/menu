@@ -30,7 +30,15 @@ export const products: Product[] = [
     title: "Bò Húc",
     price: 18000,
     unit: "lon",
-    images: ["/assets/products/bo-huc.webp"],
+    images: ["/assets/products/bo-huc-0.png", "/assets/products/bo-huc.webp"],
+    category: "drinks"
+  },
+  {
+    id: "pepsi",
+    title: "Pepsi",
+    price: 12000,
+    unit: "lon",
+    images: ["/assets/products/pepsi.png", "/assets/products/pepsi-1.png"],
     category: "drinks"
   },
   {
@@ -38,25 +46,10 @@ export const products: Product[] = [
     title: "Sting Dâu",
     unit: "lon",
     price: 16000,
-    images: ["/assets/products/sting-dau.webp"],
+    images: ["/assets/products/sting-0.png", "/assets/products/sting-dau.webp"],
     category: "drinks"
   },
-  {
-    id: "khau-trang-y-te",
-    title: "Khẩu trang y tế",
-    price: 50000,
-    images: ["/assets/products/khau-trang-y-te.png"],
-    category: "items",
-    unit: "hộp"
-  },
-  {
-    id: "bao-li-xi",
-    title: "Bao lì xì",
-    price: 10000,
-    images: ["/assets/products/bao-li-xi.jpeg"],
-    category: "items",
-    unit: "cái"
-  },
+
   {
     id: "mi-quang",
     title: "Mì quảng",
@@ -80,5 +73,31 @@ export const products: Product[] = [
     images: ["/assets/products/bun-mam-nem.jpeg"],
     category: "food",
     unit: "tô"
+  },
+
+  {
+    id: "dau-phong",
+    title: "Đậu phộng",
+    price: 6000,
+    images: ["/assets/products/dau-phong-da-ca.jpeg"],
+    category: "snacks",
+    unit: "món"
+  },
+
+  {
+    id: "khau-trang-y-te",
+    title: "Khẩu trang y tế",
+    price: 50000,
+    images: ["/assets/products/khau-trang-y-te.png"],
+    category: "items",
+    unit: "hộp"
+  },
+  {
+    id: "bao-li-xi",
+    title: "Bao lì xì",
+    price: 10000,
+    images: ["/assets/products/bao-li-xi.jpeg"],
+    category: "items",
+    unit: "cái"
   }
 ];

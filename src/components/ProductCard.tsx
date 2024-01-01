@@ -8,43 +8,46 @@ import Ribbon from "antd/es/badge/Ribbon";
 type ProductCardProps = {
   product: Product;
 };
-export default async function ProductCard(props: ProductCardProps) {
+export default function ProductCard(props: ProductCardProps) {
   const { id, title, price, images, unit } = props.product;
 
-  const isShowBadge = price === 0 ? "Free" : null;
+  const isShowBadge = price === 0 ? "Free" : "";
 
+  if (!props) return <React.Fragment />;
   return (
-    <Ribbon text={isShowBadge} style={{ display: isShowBadge ? "block" : "none" }} color="green">
-      <article
-        title={`Sản phẩm ${title} ${SEO.alt_key}`}
-        className={"product-card"}
-        data-product-id={id}
-        data-product-title={title}
-      >
+    <article
+      title={`Sản phẩm ${title} ${SEO.alt_key}`}
+      className={"product-card"}
+      data-product-id={id}
+      data-product-title={title}
+    >
+      <Ribbon text={isShowBadge} style={{ display: isShowBadge ? "block" : "none" }} color="green">
         <Image
           className={"product-photo"}
           src={images[0]}
-          width={220}
-          height={180}
+          width={420}
+          priority={true}
+          height={280}
+          style={{ width: "100%" }}
           alt={`Sản phẩm ${title} ${SEO.alt_key}`}
         />
+      </Ribbon>
 
-        <div className={"p-card-info"}>
-          <h2 className={"product-title"} title={title}>
-            {title}
-          </h2>
+      <div className={"p-card-info"}>
+        <h2 className={"product-title"} title={title}>
+          {title}
+        </h2>
 
-          {price === 0 ? (
-            <h3 className={"product-price"} title={`Miễn phí sản phẩm ${title}`}>
-              Miễn phí
-            </h3>
-          ) : (
-            <h3 className={"product-price"} title={`${price}/${unit}`}>
-              {fPrice(price)} / {unit}
-            </h3>
-          )}
-        </div>
-      </article>
-    </Ribbon>
+        {price === 0 ? (
+          <h3 className={"product-price"} title={`Miễn phí sản phẩm ${title}`}>
+            Miễn phí
+          </h3>
+        ) : (
+          <h3 className={"product-price"} title={`${price}/${unit}`}>
+            {fPrice(price)} / {unit}
+          </h3>
+        )}
+      </div>
+    </article>
   );
 }
