@@ -14,6 +14,14 @@
   }
 
   .products-container {
+
+    .product-category-title {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .products-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -42,7 +50,7 @@
   }
 
   .p-card-info {
-    border-top: 1px solid $border-color;
+    //border-top: 1px solid $border-color;
     padding: 12px;
     background: $bg-white;
     border-radius: 0 0 8px 8px ;
