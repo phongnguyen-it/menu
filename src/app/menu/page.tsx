@@ -70,7 +70,7 @@ export default async function MenuPage() {
             <Row gutter={[24, 24]}>
               {products
                 .filter((x) => x.category === "food")
-                .map((prod, ind) => {
+                .map((prod) => {
                   return (
                     <Col key={prod.id} xs={24} sm={12} md={8} lg={8} xxl={6}>
                       <ProductCard product={prod} />

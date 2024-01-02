@@ -4,7 +4,8 @@ import "./globals.css";
 import { APP_DOMAIN_NAME, GTM_ID, SEO, SOCIAL_LINKS } from "@/app.conf";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Organization, WithContext } from "schema-dts";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
+import AntdRegistry from "@/AntdRegistry";
+// import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,7 +17,25 @@ export const metadata: Metadata = {
   },
   description: SEO.description,
   keywords: SEO.keywords,
-  metadataBase: new URL(`${APP_DOMAIN_NAME}`)
+  metadataBase: new URL(`${APP_DOMAIN_NAME}`),
+  openGraph: {
+    siteName: SEO.name,
+    url: APP_DOMAIN_NAME,
+    images: [
+      {
+        url: `${APP_DOMAIN_NAME}/HuongXuanBangHieu.jpg`,
+        width: 1024,
+        height: 1024,
+        alt: "Hương Xuân quán - Cà phê võng - Bình Dân - Miễn Phí Trà Đá"
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`${APP_DOMAIN_NAME}/HuongXuanBangHieu.jpg`]
+  }
 };
 
 export const viewport: Viewport = {
@@ -36,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: SEO.name,
     alternateName: `${SEO.name} - ${SEO.description}`,
     url: APP_DOMAIN_NAME,
-    sameAs: [SOCIAL_LINKS.REDDIT, SOCIAL_LINKS.FACEBOOK, SOCIAL_LINKS.LINKEDIN, SOCIAL_LINKS.INSTAGRAM, SOCIAL_LINKS.X],
+    sameAs: [SOCIAL_LINKS.FACEBOOK, SOCIAL_LINKS.INSTAGRAM],
     description: `${SEO.description} | ${SEO.name}`,
     email: "phongnguyen.itengineer@gmail.com"
   };

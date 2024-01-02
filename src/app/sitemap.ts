@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   ENDPOINTS.map((r) => {
     sitemapRoute.push({
-      url: `https://${APP_DOMAIN_NAME}${r}`,
+      url: `${APP_DOMAIN_NAME}${r}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1

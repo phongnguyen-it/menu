@@ -1,11 +1,18 @@
 .main {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
+
   height: 100%;
   width: 100%;
+
+
+  .page {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 0;
+  }
 }
 
 $spacing: (
@@ -50,3 +57,4 @@ $spacing: (
   .mg-right-#{$name} {margin-right: $value;}
 
 }
+

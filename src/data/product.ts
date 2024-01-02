@@ -4,9 +4,17 @@ export const products: Product[] = [
   {
     id: "coconut",
     title: "Nước dừa",
-    price: 20000,
+    price: 15000,
     unit: "trái",
     images: ["/assets/products/nuoc-dua.jpeg"],
+    category: "drinks"
+  },
+  {
+    id: "kumquat-coconut",
+    title: "Dừa tắc",
+    price: 12000,
+    unit: "ly",
+    images: ["/assets/products/dua-tac-0.png", "/assets/products/dua-tac-1.png"],
     category: "drinks"
   },
   {
@@ -28,7 +36,7 @@ export const products: Product[] = [
   {
     id: "bo-huc",
     title: "Bò Húc",
-    price: 18000,
+    price: 15000,
     unit: "lon",
     images: ["/assets/products/bo-huc-0.png", "/assets/products/bo-huc.webp"],
     category: "drinks"
@@ -45,23 +53,15 @@ export const products: Product[] = [
     id: "sting-dau",
     title: "Sting Dâu",
     unit: "lon",
-    price: 16000,
+    price: 12000,
     images: ["/assets/products/sting-0.png", "/assets/products/sting-dau.webp"],
     category: "drinks"
   },
 
   {
-    id: "mi-quang",
-    title: "Mì quảng",
-    price: 35000,
-    images: ["/assets/products/mi-quang.webp"],
-    category: "food",
-    unit: "tô"
-  },
-  {
     id: "mi-tom-xao",
     title: "Mì tôm trứng",
-    price: 25000,
+    price: 20000,
     images: ["/assets/products/mi-tom-xao.jpeg"],
     category: "food",
     unit: "tô"
@@ -69,7 +69,7 @@ export const products: Product[] = [
   {
     id: "bun-mam-nem",
     title: "Bún mắm nêm",
-    price: 35000,
+    price: 30000,
     images: ["/assets/products/bun-mam-nem.jpeg"],
     category: "food",
     unit: "tô"
@@ -82,6 +82,15 @@ export const products: Product[] = [
     images: ["/assets/products/dau-phong-da-ca.jpeg"],
     category: "snacks",
     unit: "món"
+  },
+
+  {
+    id: "keo-cao-su",
+    title: "Kẹo Singum",
+    price: 10000,
+    images: ["/assets/products/cool-air.png", "/assets/products/keo-singum.png"],
+    category: "snacks",
+    unit: "vĩ"
   },
 
   {
@@ -98,6 +107,6 @@ export const products: Product[] = [
     price: 10000,
     images: ["/assets/products/bao-li-xi.jpeg"],
     category: "items",
-    unit: "cái"
+    unit: "5 bao"
   }
 ];

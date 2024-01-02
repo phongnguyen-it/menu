@@ -6,13 +6,9 @@ export const GA_ID = process.env.NEXT_PUBLIC_GAID;
 export const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 
 export const SOCIAL_LINKS = {
-  GITHUB: "https://github.com/huongxuan",
-  LINKEDIN: "https://www.linkedin.com/company/huongxuan",
   TIKTOK: "https://www.tiktok.com/@huongxuan",
   FACEBOOK: "https://www.facebook.com/huongxuan",
-  X: "https://twitter.com/huongxuan",
-  INSTAGRAM: "https://www.instagram.com/huongxuan",
-  REDDIT: "https://www.reddit.com/r/huongxuan"
+  INSTAGRAM: "https://www.instagram.com/huongxuan"
 };
 
 export const SEO = {
